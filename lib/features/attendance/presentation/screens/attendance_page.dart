@@ -22,7 +22,7 @@ class _AttendancePageState extends State<AttendancePage> {
   bool _isMapMoving = false;
   GoogleMapController? _mapController;
 
-  LatLng _userLocation = LatLng(0, 0);
+  LatLng _userLocation = LatLng(30.0444, 31.2357);
 
   void _handleMapMoveStarted() {
     setState(() {
@@ -173,7 +173,7 @@ class _AttendancePageState extends State<AttendancePage> {
               bottomSheet: _isMapMoving
                   ? SizedBox.shrink()
                   : SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      height: MediaQuery.of(context).size.height * 0.3,
                       width: MediaQuery.of(context).size.width,
                       child: Padding(
                         padding: const EdgeInsets.all(20),
