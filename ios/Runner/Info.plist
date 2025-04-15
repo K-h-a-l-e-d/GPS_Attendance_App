@@ -6,7 +6,7 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 	<string>Gps Attendance</string>
-
+	
 	<key>NSLocationWhenInUseUsageDescription</key>
     <string>This app needs access to your location to track attendance via GPS.</string>
 

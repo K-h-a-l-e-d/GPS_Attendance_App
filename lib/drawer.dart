@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gps_attendance/core/themes/theme_bloc/theme_bloc.dart';
@@ -96,7 +97,9 @@ class AppDrawer extends StatelessWidget {
                 style: TextStyle(color: Theme.of(context).primaryColor),
               ),
               onTap: () {
-                // TODO: Implement Language Change
+                context.locale == Locale('en')
+                    ? context.setLocale(Locale('ar'))
+                    : context.setLocale(Locale('en'));
               },
             ),
             Divider(color: Theme.of(context).primaryColor),
